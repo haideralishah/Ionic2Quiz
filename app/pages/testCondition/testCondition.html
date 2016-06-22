@@ -1,0 +1,25 @@
+<ion-navbar primary *navbar>
+    <ion-title>
+        Test Description
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+
+    <ion-card>
+
+        <ion-card-header>
+           <b> {{testName}}</b>
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{testDescription}} <br>
+            <b>Total Time: </b>{{testTime}} Minute</p>
+        </ion-card-content>
+    </ion-card>
+    <button block (click)="takeQuiz(testName)">Take Quiz</button>
+
+
+</ion-content>
+<ion-toolbar position="bottom" dark class="centerAlign">
+    <ion-title>Hailee Tech</ion-title>
+</ion-toolbar>

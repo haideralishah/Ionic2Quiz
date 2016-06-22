@@ -1,0 +1,23 @@
+<ion-navbar primary *navbar>
+    <ion-title>
+        Result
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+  <ion-card>
+    <ion-card-header>
+      {{resultStatement}}
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{totalMarks}}</h1>
+      <p>
+        {{totalPercentage | round:2}} %
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-toolbar position="bottom" dark class="centerAlign">
+    <ion-title>Hailee Tech</ion-title>
+</ion-toolbar>
